@@ -1,0 +1,311 @@
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: "oneTypesShrift";
+	src: url(../fonts/BergamascoBold.ttf);
+}
+
+@font-face {
+	font-family: "golosShrift";
+	src: url(../fonts/Golos-Text_Regular.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+#screenOfSlider {
+    width: 100%;
+    height: 97vh;
+    background-color: #2F4F4F;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+}
+
+h1 {
+    font-size: 4vh;
+    font-family: "oneTypesShrift";
+}
+
+#namePlaceholder {
+    margin-left: 7%;
+    width: 19%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: #2F4F4F;
+}
+
+
+
+
+.hamburger {
+    position: relative;
+    z-index: 100;
+    border: rgb(255, 255, 255) ;
+    background: white;
+    cursor: pointer;
+    font-size: 1.7em;
+    font-family: "oneTypesShrift";
+    color: #2F4F4F;
+    top: -37vh;
+    left: 85vw;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    transform: translateY(-110%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(255, 255, 255);
+    color: white;
+    list-style: none;
+    padding-top: 10rem;
+    padding-left: 7vw;
+    font-size: 1.7em;
+    font-family: "oneTypesShrift";
+  }
+
+  .showMenu {
+    transform: translateY(0);
+  }
+
+
+
+
+
+  #blockSlider {
+	overflow: hidden;
+	position: absolute;
+	top: 25vh;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 33vw;
+	width: 36vw;
+    left: 2vw;
+}
+    
+.slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+.slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+    
+.slideImg {
+      width: 100%;
+    }
+    
+.controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    
+.control {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 20px;
+    }
+
+#nextBtn {
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+#placeholderTextOne {
+    display: block;
+    color: white;
+    width: 35vw;
+    left: 52vw;
+    position: relative;
+    top: 10vh;
+}
+
+#textOne {
+    font-family: "golosShrift";
+    font-size: 1.6em;
+}
+
+
+
+#screenTwo {
+    width: 100%;
+    height: 100vh;
+    background-color: #365458;
+}
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #2F4F4F;
+    position: relative;
+    top: 80vh;
+}
+
+
+
+
+.screenButton {
+    color: white;
+    font-size: 1.7em;
+    font-family: "oneTypesShrift";
+    border: 0.1em outset rgb(255, 255, 255);
+    border-radius: 20em;
+    padding: 1.5%;
+    position: relative;
+    left: 65vw;
+    top: 20vh;
+}
+
+
+.emailInput {
+    position: relative;
+    color: white;
+    background-color: #365458;
+    height: 7vh;
+    border-radius: 6em;
+    border-color: white;
+    left: 65vw;
+    top: 6vh;
+}
+
+::placeholder {
+    color: rgb(173, 182, 190);
+}
+
+#emailText {
+    width: 20vw;
+    text-align: center;
+    font-size: large;
+}
+
+#emailButton {
+    width: 5vw;
+    font-size: large;
+}
+
+#infoText {
+    display: block;
+    margin: 0;
+    position: relative;
+    color: rgb(230, 230, 230);
+    font-size: 1.1em;
+    font-family: "golosShrift";
+    text-align: right;
+    left: -8vw;
+    top: 3vh;
+}
+
+#upButton {
+    color: white;
+    display: block;
+    position: relative;
+    top: -10vh;
+    width: 1vw;
+    text-align: center;
+    left: 45.5vw;
+    
+}
+
+
+
+
+
+
+
+
+#forTextThree {
+	position: absolute;
+	font-family: "golosShrift";
+	font-size: 2.3vh;
+	color: white;
+	width: 40vw;
+	left: 12vw;
+	top: 110vh;
+}
+
+#panteleevPhoto {
+	position: absolute;
+	width: 25%;
+	top: 105vh;
+	left: 60vw;
+	transition: all .2s linear;
+	border-radius: 40px;
+}
+
+
+
+
+
+#siteBil {
+	margin: 0;
+	color: #f9f9f4;
+	position: absolute;
+	left: 5vw;
+	top: 3vh;
+	font-family: "golosShrift";
+}
+
+#vokgSite {
+	position: absolute;
+	font-family: "golosShrift";
+	color: #f9f9f4;
+	font-size: 2vh;
+	right: 75.6vw;
+	top: 12vh;
+}
+
+#travelImg {
+	filter: brightness(10) invert(1);
+	width: 2%;
+	position: absolute;
+	right: 85.5vw;
+	top: 13.5vh;
+}
+
+#vkSite {
+	position: absolute;
+	font-family: "golosShrift";
+	color: #f9f9f4;
+	font-size: 2vh;
+	right: 76vw;
+	top: 7.0vh;
+}
+
+#vK {
+	filter: brightness(10) invert(1);
+	width: 2%;
+	position: absolute;
+	right: 85.5vw;
+	top: 8.5vh;
+}
